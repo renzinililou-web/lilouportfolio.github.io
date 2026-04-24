@@ -1,0 +1,50 @@
+/* Ce fichier prépare un gabarit simple pour les futures pages projet */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-lg);
+}
+
+/* L'image principale d'un projet prend toute la largeur disponible */
+main img {
+  width: 100%;
+  border-radius: var(--radius-card);
+}
+
+/* Le bloc texte sous l'image reste dans une largeur confortable */
+main article {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 760px;
+}
+
+/* Le titre principal du projet garde la police d'identité */
+main h1 {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+/* Les paragraphes du projet restent sobres et lisibles */
+main p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1em;
+}
+
+/* Sur mobile, la page garde la même logique avec moins de marges */
+@media (max-width: 768px) {
+  main {
+    padding-top: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    padding-left: var(--spacing-md);
+  }
+}

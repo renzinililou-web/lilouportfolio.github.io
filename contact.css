@@ -1,0 +1,79 @@
+/* La section contact réunit les informations utiles dans des cartes simples */
+.contact-section {
+  padding-top: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-lg);
+}
+
+/* La grille organise les blocs de contact sans complexité inutile */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+/* Chaque carte isole une information pour une lecture rapide */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding-top: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  padding-left: var(--spacing-md);
+  border-radius: var(--radius-card);
+  background-color: var(--bg-card);
+}
+
+/* Le petit titre de carte reste cohérent avec les autres titres */
+.contact-title {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+
+/* Le texte courant complète les informations pratiques */
+.contact-text {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1em;
+}
+
+/* La liste enlève les puces pour garder une lecture douce */
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* Chaque ligne de contact reste simple à remplacer */
+.contact-item {
+  color: var(--text-secondary);
+  font-size: 1em;
+}
+
+/* Les liens pratiques gardent un style visible mais léger */
+.contact-link {
+  color: var(--color-primary);
+  font-size: 1em;
+}
+
+/* Sur mobile, les cartes passent en une seule colonne */
+@media (max-width: 768px) {
+  .contact-section {
+    padding-top: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    padding-left: var(--spacing-md);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

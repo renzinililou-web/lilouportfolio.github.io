@@ -1,0 +1,71 @@
+/* La zone hero pose l'ambiance générale de chaque page */
+.hero {
+  padding-top: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-lg);
+}
+
+/* Variante plus généreuse pour la page d'accueil */
+.hero-home {
+  padding-top: var(--spacing-xl);
+  padding-right: var(--spacing-lg);
+  padding-bottom: var(--spacing-xl);
+  padding-left: var(--spacing-lg);
+}
+
+/* Variante simple pour les pages intérieures */
+.hero-page {
+  padding-top: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-lg);
+}
+
+/* Le contenu du hero reste lisible dans une largeur confortable */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 720px;
+}
+
+/* Le titre principal utilise la police d'identité du site */
+.hero-title {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+/* Le texte d'introduction accompagne le titre sans le concurrencer */
+.hero-text {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1em;
+}
+
+/* Sur petit écran, on réduit seulement les marges autour du hero */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    padding-left: var(--spacing-md);
+  }
+
+  .hero-home {
+    padding-top: var(--spacing-lg);
+    padding-right: var(--spacing-md);
+    padding-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-md);
+  }
+
+  .hero-page {
+    padding-top: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    padding-left: var(--spacing-md);
+  }
+}

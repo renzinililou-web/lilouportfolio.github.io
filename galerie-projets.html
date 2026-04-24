@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Lilou Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+  </head>
+  <body>
+    <!-- Header avec navigation principale -->
+    <header class="site-header">
+      <nav class="nav-bar" aria-label="Navigation principale">
+        <a class="nav-brand" href="accueil.html">
+       
+          <span class="nav-title">Lilou Portfolio</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a class="nav-link" href="accueil.html">Accueil</a></li>
+          <li><a class="nav-link" href="galerie-projets.html">Galerie</a></li>
+          <li><a class="nav-link" href="a-propos.html">À propos</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="mobile-menu-gallery" aria-expanded="false">☰</button>
+      </nav>
+
+      <nav class="nav-overlay" id="mobile-menu-gallery" aria-label="Menu mobile" aria-hidden="true">
+        <a class="nav-overlay-link" href="accueil.html">Accueil</a>
+        <a class="nav-overlay-link" href="galerie-projets.html">Galerie</a>
+        <a class="nav-overlay-link" href="a-propos.html">À propos</a>
+        <a class="nav-overlay-link" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero de la galerie -->
+      <section class="hero hero-page">
+        <article class="hero-content">
+          <h1 class="hero-title">Galerie de projets</h1>
+          <p class="hero-text">Cette galerie réunit des affiches et des interfaces où la couleur, la forme et le rythme construisent une lecture douce, claire et sensible.</p>
+        </article>
+      </section>
+
+      <!-- Grille complète des projets -->
+      <section class="projects-section">
+        <h2 class="section-title">Travaux récents</h2>
+
+        <section class="projects-grid" aria-label="Liste des projets">
+          <article class="project-card">
+            <figure class="project-image-frame">
+              <img
+                class="project-image"
+                src=image1.jpg
+                alt="Affiche rose et corail construite autour d'un trajet imaginaire et d'une typographie ample"
+              >
+            </figure>
+            <article class="project-content">
+              <h3 class="project-title">Lazy Go !</h3>
+              <p class="project-meta">Marque de compotes énergétiques, 2024</p>
+              <p class="project-description">Lazy Go ! est une marque de compotes énergétiques destinée aux jeunes apprentis randonneurs atteints du syndrome de la flemme.</p>
+              <p class="project-caption">Ironie - motivation - amusement - vitalité</p>
+            </article>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-image-frame">
+              <img
+                class="project-image"
+                src="image2.jpg"
+                alt="Série d'affiches colorées avec formes arrondies, aplats fluorescents et composition modulaire"
+              >
+            </figure>
+            <article class="project-content">
+              <h3 class="project-title">Topolino Fluo</h3>
+              <p class="project-meta">Campagne publicitaire, 2024</p>
+              <p class="project-description">Inspirée des motifs cosmiques, la série Topolino Fluo de la célèbre marque de voiture Fiat boulverse les Topolino sans permis par un design phosphorescent.</p>
+              <p class="project-caption">Voyage immersif - liberté - sécurité</p>
+            </article>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-image-frame">
+              <img
+                class="project-image"
+                src="image3.jpg"
+                alt="Maquette mobile d'application avec parcours étudiant clair, boutons colorés et mise en page apaisée"
+              >
+            </figure>
+            <article class="project-content">
+              <h3 class="project-title">Unik</h3>
+              <p class="project-meta">Application sur l'adoption, 2025</p>
+              <p class="project-description">Unik aide chaque futur parent à avancer sereinement. Plus qu’un guide, c’est un espace de soutien, d’échange et de sens, où chaque histoire d’adoption est Unik.</p>
+              <p class="project-caption">Émotions - liens - accompagnement - compréhension</p>
+            </article>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer avec liens utiles -->
+    <footer class="site-footer">
+      <section class="footer-content">
+        <article class="footer-brand">
+          <p class="footer-title">Lilou Portfolio</p>
+          <p class="footer-note">Copyright 2026 Lilou Portfolio</p>
+        </article>
+
+        <section class="footer-links" aria-label="Liens du footer">
+          <a class="footer-link" href="https://www.instagram.com/">Instagram</a>
+          <a class="footer-link" href="https://www.behance.net/">Behance</a>
+          <a class="footer-link" href="contact.html">Mentions légales</a>
+        </section>
+      </section>
+    </footer>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+/* Base commune de la page pour poser les couleurs et les polices */
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+/* Liens simples et lisibles dans tout le site */
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+/* Effet léger au survol pour montrer qu'un lien est interactif */
+a:hover {
+  color: var(--color-accent);
+}
+
+/* Le header encadre la navigation en haut de la page */
+.site-header {
+  padding-top: var(--spacing-md);
+  padding-right: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+}
+
+/* La barre principale aligne le logo à gauche et les liens à droite */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+/* Le bloc de marque regroupe le nom du site */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/* Petit repère visuel du logo en texte */
+.nav-logo {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: 1.25em;
+}
+
+/* Nom du portfolio */
+.nav-title {
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 1.25em;
+}
+
+/* Les liens desktop restent sur une seule ligne quand il y a la place */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style commun des liens dans la navigation */
+.nav-link {
+  color: var(--text-secondary);
+  font-size: 1em;
+}
+
+/* Le bouton burger est caché sur grand écran */
+.nav-toggle {
+  display: none;
+  border: 1px solid var(--text-primary);
+  border-radius: var(--radius-card);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 1.2em;
+  padding-top: var(--spacing-sm);
+  padding-right: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-md);
+  cursor: pointer;
+  transition: background-color var(--transition-base);
+}
+
+/* Le survol colore le bouton pour mieux voir son action */
+.nav-toggle:hover {
+  background-color: var(--color-primary);
+}
+
+/* Le menu mobile reste fermé tant qu'on n'a pas cliqué */
+.nav-overlay {
+  display: none;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-lg);
+  border-radius: var(--radius-card);
+  background-color: var(--bg-card);
+}
+
+/* Quand l'attribut change, le menu mobile devient visible */
+.nav-overlay[aria-hidden="false"] {
+  display: flex;
+}
+
+/* Les liens de l'overlay sont plus grands pour être faciles à toucher */
+.nav-overlay-link {
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 1.5em;
+}
+
+/* Sur mobile, on cache les liens classiques et on affiche le burger */
+@media (max-width: 768px) {
+  .site-header {
+    padding-top: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    padding-left: var(--spacing-md);
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

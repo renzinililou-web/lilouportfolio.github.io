@@ -1,0 +1,24 @@
+:root {
+  /* Couleurs */
+  --color-primary: #ea4da6;
+  --color-accent: #f45130;
+  --bg-page: #f6f6f6;
+  --bg-card: #d2cccc;
+  --text-primary: #000000;
+  --text-secondary: #000000;
+
+  /* Typographie */
+  --font-heading: 'Verdana', serif;
+  --font-body: 'Poppins', sans-serif;
+  --font-size-base: 17px;
+
+  /* Espacements */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+
+  /* Divers */
+  --radius-card: 8px;
+  --transition-base: 0.2s ease;
+}

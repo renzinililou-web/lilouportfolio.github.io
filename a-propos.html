@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Lilou Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+  </head>
+  <body>
+    <!-- Header avec navigation principale -->
+    <header class="site-header">
+      <nav class="nav-bar" aria-label="Navigation principale">
+        <a class="nav-brand" href="accueil.html">
+
+          <span class="nav-title">Lilou Portfolio</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a class="nav-link" href="accueil.html">Accueil</a></li>
+          <li><a class="nav-link" href="galerie-projets.html">Galerie</a></li>
+          <li><a class="nav-link" href="a-propos.html">À propos</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="mobile-menu-about" aria-expanded="false">☰</button>
+      </nav>
+
+      <nav class="nav-overlay" id="mobile-menu-about" aria-label="Menu mobile" aria-hidden="true">
+        <a class="nav-overlay-link" href="accueil.html">Accueil</a>
+        <a class="nav-overlay-link" href="galerie-projets.html">Galerie</a>
+        <a class="nav-overlay-link" href="a-propos.html">À propos</a>
+        <a class="nav-overlay-link" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero de la page à propos -->
+      <section class="hero hero-page">
+        <article class="hero-content">
+          <h1 class="hero-title">À propos</h1>
+          <p class="hero-text">Étudiante en Mastère 1 direction artistique en design graphique à l'école Condé Nice, il me tient à coeur de vous partager mes univers colorés à travers des projets sensibles et porteur de sens.</p>
+        </article>
+      </section>
+
+      <!-- Texte de présentation -->
+      <section class="about-section">
+        <h2 class="section-title">Parcours</h2>
+        <p class="about-text">Je développe une pratique graphique attentive aux matières visuelles, aux rythmes typographiques et aux usages numériques. Mon portfolio rassemble des affiches, des expérimentations éditoriales et des interfaces pensées comme des espaces sensibles. Chaque projet cherche un équilibre entre intuition, clarté et présence colorée, avec une méthode simple: observer, dessiner, tester, puis ajuster jusqu'à obtenir une forme juste et calme durable.</p>
+      </section>
+
+      <!-- Appel à aller voir les projets -->
+      <section class="cta-section">
+        <a class="cta-link" href="galerie-projets.html">Découvrir les projets</a>
+      </section>
+    </main>
+
+    <!-- Footer avec liens utiles -->
+    <footer class="site-footer">
+      <section class="footer-content">
+        <article class="footer-brand">
+          <p class="footer-title">Lilou Portfolio</p>
+          <p class="footer-note">Copyright 2026 Lilou Portfolio</p>
+        </article>
+
+        <section class="footer-links" aria-label="Liens du footer">
+          <a class="footer-link" href="https://www.instagram.com/">Instagram</a>
+          <a class="footer-link" href="https://www.behance.net/">Behance</a>
+          <a class="footer-link" href="contact.html">Mentions légales</a>
+        </section>
+      </section>
+    </footer>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

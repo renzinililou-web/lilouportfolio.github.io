@@ -1,0 +1,134 @@
+/* Cette section sert aux grilles, cartes projets et texte de présentation */
+.projects-section,
+.about-section,
+.cta-section {
+  padding-top: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-lg);
+}
+
+/* Le titre de section organise visuellement les contenus */
+.section-title {
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 1.75em;
+  line-height: 1.2;
+}
+
+/* La grille applique les trois colonnes demandées dans le brief */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+/* Chaque carte réunit image, titre et texte dans un bloc doux */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  padding-left: var(--spacing-md);
+  border-radius: var(--radius-card);
+  background-color: var(--bg-card);
+}
+
+/* Le cadre conserve des bords arrondis autour de l'image */
+.project-image-frame {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+/* L'image remplit simplement la largeur disponible */
+.project-image {
+  width: 100%;
+}
+
+/* Le contenu texte de la carte reste bien espacé */
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* Le titre du projet vient après le titre de section dans la hiérarchie */
+.project-title {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+
+/* La ligne de méta donne la discipline et l'année */
+.project-meta {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1em;
+}
+
+/* Le texte descriptif reste court et facile à remplacer */
+.project-description {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1em;
+}
+
+/* La légende accompagne l'image avec un ton plus léger */
+.project-caption {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* Le bloc de texte à propos garde une largeur confortable */
+.about-text {
+  max-width: 760px;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1em;
+}
+
+/* Le bouton d'appel à l'action est volontairement simple à modifier */
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-card);
+  background-color: var(--color-primary);
+  color: var(--text-primary);
+  font-size: 1em;
+  padding-top: var(--spacing-md);
+  padding-right: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+  transition: background-color var(--transition-base);
+}
+
+/* Le survol change seulement la couleur de fond */
+.cta-link:hover {
+  background-color: var(--color-accent);
+  color: var(--text-primary);
+}
+
+/* Sur mobile, la grille passe à une seule colonne et les marges respirent mieux */
+@media (max-width: 768px) {
+  .projects-section,
+  .about-section,
+  .cta-section {
+    padding-top: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    padding-left: var(--spacing-md);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

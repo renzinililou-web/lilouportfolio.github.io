@@ -1,0 +1,67 @@
+/* Le footer ferme la page avec des informations utiles et calmes */
+.site-footer {
+  padding-top: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-lg);
+}
+
+/* Le contenu du footer peut revenir à la ligne si l'écran rétrécit */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--text-primary);
+}
+
+/* Le bloc de marque rappelle le nom du site */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* Le titre du footer prolonge l'identité typographique */
+.footer-title {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 1.25em;
+}
+
+/* Les liens du footer se rangent simplement sur plusieurs lignes */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+/* Style de lien dédié au footer */
+.footer-link {
+  color: var(--text-secondary);
+  font-size: 1em;
+}
+
+/* Le petit texte légal reste discret mais lisible */
+.footer-note {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1em;
+}
+
+/* Sur mobile, le footer s'empile naturellement */
+@media (max-width: 768px) {
+  .site-footer {
+    padding-top: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    padding-left: var(--spacing-md);
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
